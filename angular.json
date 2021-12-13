@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "c055473f-d297-4661-8243-83e64fe2e00d"
+    "analytics": "042a0787-9664-4bcf-8c31-39eb4333367b"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "API-Countries": {
+    "SPApaises": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/API-Countries",
+            "outputPath": "dist/SPApaises",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "API-Countries:build:production"
+              "browserTarget": "SPApaises:build:production"
             },
             "development": {
-              "browserTarget": "API-Countries:build:development"
+              "browserTarget": "SPApaises:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "API-Countries:build"
+            "browserTarget": "SPApaises:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "API-Countries"
+  "defaultProject": "SPApaises"
 }

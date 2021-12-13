@@ -1,30 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PorCapitalComponent } from './Components/por-capital/por-capital.component';
-import { PorPaisComponent } from './Components/por-pais/por-pais.component';
-import { PorRegionComponent } from './Components/por-region/por-region.component';
-import { VerPaisComponent } from './Components/ver-pais/ver-pais.component';
-import { PaisComponent } from './pais.component';
+import { PorPaisComponent } from './pages/por-pais/por-pais.component';
+import { PorRegionComponent } from './pages/por-region/por-region.component';
+import { PorCapitalComponent } from './pages/por-capital/por-capital.component';
+import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { PaisTablaComponent } from './components/pais-tabla/pais-tabla.component';
+import { InputPaisComponent } from './components/input-pais/input-pais.component';
 
 
 
 @NgModule({
   declarations: [
-    PorCapitalComponent,
     PorPaisComponent,
     PorRegionComponent,
+    PorCapitalComponent,
     VerPaisComponent,
-    PaisComponent
+    PaisTablaComponent,
+    InputPaisComponent
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    HttpClientModule
+    FormsModule
   ],
-  exports:[
-    PaisComponent,
+  exports: [
+    PorPaisComponent,
+    PorRegionComponent,
+    PorCapitalComponent,
     VerPaisComponent
   ]
 })

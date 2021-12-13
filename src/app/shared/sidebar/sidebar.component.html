@@ -1,12 +1,21 @@
-<div class="bg-dark border-right p-2" id="sidebar">
-  <h3 class="text-light">
-      Busquedas
-  </h3>
-  <hr class="text-white" />
-
-  <div class="list-group list-reset mt-1">
-      <a  class="list-group-item list-group-item-action">
-        Por pais
-      </a>
-  </div>
-</div>
+<h2>Búsquedas</h2>
+<hr>
+<ul class="list-group">
+    <li 
+    class="list-group-item"
+    routerLink="" 
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact:true}">
+        Buscar país
+    </li>
+    <li class="list-group-item"
+    routerLink="region"
+    routerLinkActive="active">
+        Por región
+    </li>
+    <li class="list-group-item"
+    routerLink="capital"
+    routerLinkActive="active">
+        Por capital
+    </li>
+</ul>
