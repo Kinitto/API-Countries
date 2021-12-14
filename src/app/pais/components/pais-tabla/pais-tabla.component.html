@@ -10,8 +10,8 @@
     </thead>
     <tbody>
         <tr *ngFor="let pais of countries; let i=index">
-           
-            <td> {{i+1}} </td> 
+
+            <td> {{i+1}} </td>
             <td>
                 <img class="small-flag" [src]="pais.flags.png"> <!-- Aquí obtendremos la url de la bandera -->
             </td>
@@ -19,7 +19,7 @@
             <!-- La capital, el nombre del país y la población lo obtendremos de la api -->
             <td> {{ pais.population |number}} </td>
             <td>
-                <a>Ver...</a> <!-- Esto lo dejamos así de momento -->
+                <a [routerLink]="['/pais',pais.cca2]">Ver...</a> <!-- Esto lo dejamos así de momento -->
             </td>
         </tr>
     </tbody>

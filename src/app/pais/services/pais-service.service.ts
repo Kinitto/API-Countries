@@ -27,5 +27,9 @@ export class PaisServiceService {
     return this.httpService.get<Country[]>(url);
 
   }
+  verPais(alpha:string){
+    let url: string = `${this.apiUrl}/alpha/${alpha}`;
+    return this.httpService.get<Country[]>(url);
+  }
 
 }

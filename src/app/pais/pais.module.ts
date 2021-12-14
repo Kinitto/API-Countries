@@ -7,6 +7,7 @@ import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
 import { FormsModule } from '@angular/forms';
 import { PaisTablaComponent } from './components/pais-tabla/pais-tabla.component';
 import { InputPaisComponent } from './components/input-pais/input-pais.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -21,7 +22,8 @@ import { InputPaisComponent } from './components/input-pais/input-pais.component
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     PorPaisComponent,
